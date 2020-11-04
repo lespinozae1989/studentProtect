@@ -1,0 +1,7 @@
+{
+  "name": "WomensProtect",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
