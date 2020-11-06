@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-img src="./assets/letras.png" style="width: 300px; display:block; margin:auto;"></ion-img>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding="true">
+  <h2 style="color: #2F5C78; font-weight:100;">Datos adicionales</h2>
+  <ion-item>
+    <ion-label style="color: #2F5C78;">Mi # de teléfono: </ion-label>
+    <ion-input type="text" [(ngModel)]="registro.telefono" name="telefono"></ion-input>
+  </ion-item>
+  <ion-list>
+    <ion-radio-group value="biff">
+      <ion-list-header>
+        <ion-label style="color: #2F5C78;">Genero:</ion-label>
+      </ion-list-header>
+  
+      <ion-item>
+        <ion-label>F</ion-label>
+        <ion-radio slot="start" value="f"></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>M</ion-label>
+        <ion-radio slot="start" value="m"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+
+  <ion-item>
+    <ion-label style="color: #2F5C78;">Edad: </ion-label>
+    <ion-input type="number" [(ngModel)]="registro.edad" name="edad"></ion-input>
+  </ion-item>
+  <br>
+  <br>
+  <div id="container">
+    <br><br><br><br><br>
+    <h3>Contactos de Emergencia</h3>
+    <p style="color: #2F5C78;"> Agregar contactos</p>
+  </div>
+<br><br>
+  <ion-button (click) ="home()" expand="full" fill="solid" color="primary">Guardar</ion-button>
+</ion-content>

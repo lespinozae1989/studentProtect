@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-img src="./assets/letras.png" style="width: 200px; display:block; margin:auto;"></ion-img>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding="true">
+  <div id="container" style="padding: 10px;">
+    <ion-button (click)="add()" expand="full" fill="solid" color="primary">AGREGAR COLEGIO
+    </ion-button>
+    <br><br>
+    <ion-button (click)="join()" expand="full" fill="solid" color="primary">UNIRME A UN COLEGIO
+    </ion-button>
+    <br><br>
+    <ion-button (click)="my()" expand="full" fill="solid" color="primary">MI COLEGIO</ion-button>
+  </div>
+</ion-content>

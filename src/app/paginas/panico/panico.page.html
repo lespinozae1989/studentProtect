@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="secondary">
+    <ion-title>
+      {{ viewTitle }}
+    </ion-title>
+    <ion-buttons slot="start">
+      <!-- <ion-button (click) = "toggleMenu()">
+        <ion-icon slot="icon-only" name="menu"></ion-icon>
+      </ion-button>
+    -->
+    <ion-menu-button color="light" menu="first"></ion-menu-button>
+    </ion-buttons>
+    <ion-img src="./assets/letras.png" style="width: 200px; display:block; margin:auto;"></ion-img>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="container">
+    <h1 style="color: #2F5C78;">¡PIDE AYUDA!</h1><br><br>
+    <ion-button (click) = "presentAlert()" expand="full" style="height: auto; display:block" fill="solid" color="primary">
+      <img style="width: 50px; display:block" src="assets/alert.png">
+                  <span>  </span> Presiona</ion-button>
+  </div>
+</ion-content>

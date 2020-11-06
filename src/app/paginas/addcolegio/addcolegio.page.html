@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="start">
+      <!-- <ion-button (click) = "toggleMenu()">
+        <ion-icon slot="icon-only" name="menu"></ion-icon>
+      </ion-button>
+    -->
+    <ion-menu-button color="light" menu="first"></ion-menu-button>
+    </ion-buttons>
+    <ion-img src="./assets/letras.png" style="width: 200px; display:block; margin:auto;"></ion-img>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding="true">
+  <h1 style="color: #2F5C78;">Datos del colegio</h1>
+  <ion-item>
+    <ion-label style="color: #2F5C78;">Nombre: </ion-label>
+    <ion-input type="text" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label style="color: #2F5C78;">Dirección: </ion-label>
+    <ion-input type="text" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label style="color: #2F5C78;">Teléfono: </ion-label>
+    <ion-input type="text" ></ion-input>
+  </ion-item>
+
+  <ion-button (click)="generar()" expand="full" fill="solid" color="secondary">Generar código</ion-button>
+
+  <ion-item>
+    <ion-label style="color: #2F5C78;">Código: </ion-label>
+    <ion-input type="text" > {{ codigo }}</ion-input>
+  </ion-item>
+
+  <ion-button expand="full" fill="solid" color="primary">Guardar</ion-button>
+
+</ion-content>
