@@ -35,13 +35,10 @@
     <ion-label style="color: #2F5C78;">Edad: </ion-label>
     <ion-input type="number" [(ngModel)]="registro.edad" name="edad"></ion-input>
   </ion-item>
-  <br>
-  <br>
-  <div id="container">
-    <br><br><br><br><br>
+  <div>
     <h3>Contactos de Emergencia</h3>
-    <p style="color: #2F5C78;"> Agregar contactos</p>
+    <ion-button expand="full" (click)="presentAlertPrompt()" fill="solid" color="secondary">Agregar</ion-button>
   </div>
-<br><br>
+
   <ion-button (click) ="home()" expand="full" fill="solid" color="primary">Guardar</ion-button>
 </ion-content>
