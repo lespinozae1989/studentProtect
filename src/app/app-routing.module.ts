@@ -39,6 +39,10 @@ const routes: Routes = [
     path: 'micolegio',
     loadChildren: () => import('./paginas/micolegio/micolegio.module').then( m => m.MicolegioPageModule)
   },
+  {
+    path: 'chat',
+    loadChildren: () => import('./paginas/chat/chat.module').then( m => m.ChatPageModule)
+  },
 ];
 
 @NgModule({

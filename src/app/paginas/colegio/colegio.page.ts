@@ -19,11 +19,11 @@ export class ColegioPage implements OnInit {
   }
 
   join(){
-
+    
   }
 
   my(){
-
+    this.router.navigate(["/micolegio"]);
   }
 
 }
